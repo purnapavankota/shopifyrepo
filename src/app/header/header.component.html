@@ -1,0 +1,17 @@
+<mat-toolbar class="custom-toolbar">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Shopify</span>
+    <br>&nbsp;&nbsp;&nbsp;
+    <a mat-flat-button [routerLink]="['/shop','list']"  class="custom-button">product-List</a>&nbsp;&nbsp;&nbsp;
+    <a mat-flat-button [routerLink]="['/shop','form']"  class="custom-button">Add Product</a>
+    <span class="example-spacer"></span>
+    
+    <a  [routerLink]="['/home']"  >
+      <mat-icon>home</mat-icon>
+    </a>
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button> -->
+  </mat-toolbar>

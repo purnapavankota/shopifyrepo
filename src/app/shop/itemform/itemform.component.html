@@ -1,0 +1,50 @@
+<form (ngSubmit)="onsubmit()" class="form-container" #itemform="ngForm">
+
+    <mat-card class="item-card">
+        <mat-card-title class="mytitle">Add Item</mat-card-title>
+        
+
+        <mat-card-content class="form-content">
+            <mat-form-field appearance="fill">
+                <mat-label>Item name</mat-label>
+                <input matInput required type="text" name="itemname" [(ngModel)]="item.itemname" #itemname="ngModel">
+                <mat-error *ngIf="itemname.errors?.['required']">
+                    please enter item name
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill">
+                <mat-label>Item Description</mat-label>
+                <input matInput required type="text" name="description" [(ngModel)]="item.description" #description="ngModel">
+                <mat-error *ngIf="description.errors?.['required']">
+                    please enter description
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill">
+                <mat-label>Price</mat-label>
+                <input matInput required type="number" name="price" [(ngModel)]="item.price" #price="ngModel">
+                <mat-error *ngIf="price.errors?.['required']">
+                    please enter price
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill">
+                <mat-label>Available Quantity</mat-label>
+                <input matInput required type="number" name="quantity" [(ngModel)]="item.quantity" #quantity="ngModel">
+                <mat-error *ngIf="quantity.errors?.['required']">
+                    please enter quantity available
+                </mat-error>
+              </mat-form-field>
+
+             
+              
+        </mat-card-content> 
+      
+          <mat-card-actions >
+            <button class="actonbuttton" [disabled]="itemform.invalid" type="submit" mat-raised-button color="primary">Save</button>
+          </mat-card-actions>
+        
+    </mat-card>
+      
+</form>

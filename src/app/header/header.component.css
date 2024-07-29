@@ -1,0 +1,21 @@
+.example-spacer {
+    flex: 1 1 auto;
+    
+  }
+
+/* src/app/shared/header/header.component.css */
+.custom-toolbar {
+    background-color: rgb(231, 133, 231);
+  }
+
+.custom-button {
+    background-color: green;
+    color: white; /* Optional: to ensure text color is readable */
+  }
+  
+  /* Optional: Add hover effect */
+.custom-button:hover {
+    background-color: rgb(108, 200, 108);
+  }
+  
+  

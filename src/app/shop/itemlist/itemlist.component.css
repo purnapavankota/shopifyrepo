@@ -1,0 +1,19 @@
+.container{
+    margin: 20px 50px;
+}
+.action-btn{
+    margin: 0px 5px;
+}
+
+.mytable{
+    background-color: aquamarine;
+}
+
+.mytable .mat-header-row {
+    background-color: #3f51b5; /* Change this to the desired color */
+    color: #ffffff; /* Text color */
+  }
+  
+.mytable .mat-header-cell {
+    font-weight: bold; /* Optional: Make header text bold */
+  }

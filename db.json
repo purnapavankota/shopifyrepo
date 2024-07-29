@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "94a7",
+      "itemname": "mouse",
+      "description": "input device .",
+      "price": 399,
+      "quantity": 20
+    },
+    {
+      "id": "8ec8",
+      "itemname": "keyboard",
+      "description": "input device 2.",
+      "price": 2654,
+      "quantity": 22
+    }
+  ]
+}
